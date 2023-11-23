@@ -36,9 +36,7 @@ class PPOAgent(object):
 
         self.boolean_map_shape = example_state.get_boolean_map_shape()
         self.scalars = example_state.get_num_scalars()
-        #self.num_actions = len(type(example_action))
         self.num_map_channels = self.boolean_map_shape[2]
-        #self.scalars = example_state.get_num_scalars()
         self.action_size = len(type(example_action))
 
         # Create shared inputs
